@@ -12,7 +12,9 @@ def binary_search(arr, item):
     return None
 
 arr = []
-for i in range(100):
-    arr[i] = i+1
+for i in range(1, 101):
+    arr.append(i)
+print (arr)
+
 item = int(input())
 print (binary_search(arr, item))
