@@ -1,16 +1,18 @@
-def binary_search(list, item):
-	low = 0
-	high = len(list)-1
-	while low <= high:
-		mid = (high+low)//2
-		if int(list[mid]) == item:
-			return mid
-		elif int(list[mid]) > item:
-			high = mid-1
-		elif int(list[mid]) < item:
-			low = mid+1
-	return None
+def binary_search(arr, item):
+    low = 0
+    high = len(arr)-1
+    while low <= high:
+    mid = (high+low)//2
+    if int(arr[mid]) == item:
+	return mid
+    elif int(arr[mid]) > item:
+	high = mid-1
+    elif int(arr[mid]) < item:
+	low = mid+1
+    return None
 
-list = input().split()
+arr = []
+for i in range(100):
+    arr[i] = i+1
 item = int(input())
-print (binary_search(list, item))
+print (binary_search(arr, item))
