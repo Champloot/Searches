@@ -33,6 +33,6 @@ dict = {'A': ['B', 'C', 'D'],
         'K': ['G'],
         'L': ['E']}
 print("A, B, C, D, E, F, G, H, I, J, K, L")
-desired_name = input("Введите букву, которую хотите найти ( из представленный выше ): ")
+desired_name = input("Enter the letter you want to find (from the ones shown above): ")
 search('A', desired_name, dict)
 
