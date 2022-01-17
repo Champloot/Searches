@@ -1,5 +1,9 @@
+import collections
+
+
 def need_person(name, desired_name):
     return name == desired_name
+
 
 def search(name, desired_name, graph):
     search_queue = collections.deque()
@@ -15,6 +19,7 @@ def search(name, desired_name, graph):
                 searched.append(person)
     return print("There are no people with that name among your neighbors")
 
+
 dict = {'A': ['B', 'C', 'D'],
         'B': ['A', 'G', 'H'],
         'C': ['A', 'E'],
@@ -27,6 +32,7 @@ dict = {'A': ['B', 'C', 'D'],
         'J': ['E', 'F'],
         'K': ['G'],
         'L': ['E']}
-print ("A, B, C, D, E, F, G, H, I, J, K, L")
+print("A, B, C, D, E, F, G, H, I, J, K, L")
 desired_name = input("Введите букву, которую хотите найти ( из представленный выше ): ")
 search('A', desired_name, dict)
+
