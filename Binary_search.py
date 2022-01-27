@@ -11,10 +11,8 @@ def binary_search(arr, item):
 	    low = mid+1
     return None
 
-arr = []
-for i in range(1, 101):
-    arr.append(i)
-print(arr)
+arr = [i for i in range(100)]
 
 item = int(input())
 print (binary_search(arr, item))
+
